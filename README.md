@@ -1,4 +1,4 @@
-# manjaro_hyper_v
+# Running Manjaro Linux of Hyper-V.
 
 Installation of Manjaro XFCE Linux on Hyper-V.
 
@@ -51,7 +51,7 @@ sudo vi /etc/default/grub
 or 
 sudo nano /etc/default/grub
 ````
-Add systemd.unit=multi-user.target to the end of line GRUBCMD_LINE_LINUX_DEFAULT
+Add systemd.unit=multi-user.target to the end of line GRUBCMD_LINE_LINUX_DEFAULT this will boot the system to the command prompt. So only the xrdp will run a window manager.
 
 Save the file and update grub
 ``` bash
