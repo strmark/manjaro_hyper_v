@@ -14,7 +14,7 @@ if ! pacman -Qi xrdp > /dev/null ; then
     exit 1
 fi
 
-# Use Qs to allow xorgxrdp-devel-git
+# Use Qs to allow xorgxrdp
 if ! pacman -Qs xorgxrdp > /dev/null ; then
     echo 'xorgxrdp not installed. Run makepkg.sh first to install xorgxrdp.' >&2
     exit 1

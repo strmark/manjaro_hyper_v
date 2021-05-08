@@ -1,5 +1,5 @@
 #!/bin/bash
-#
+
 # This script is for Manjaro Linux to download and install XRDP+XORGXRDP
 #
 
@@ -22,16 +22,16 @@ pushd "$TMPDIR" || exit
 # XRDP
 #
 (
-	git clone https://aur.archlinux.org/xrdp-git.git
-	cd xrdp-git || exit
+	git clone https://aur.archlinux.org/xrdp.git
+	cd xrdp || exit
 	makepkg -sri --noconfirm
 )
 ###############################################################################
 # XORGXRDP
 # Devel version, because release version includes a bug crashing gnome-settings-daemon
 (
-	git clone https://aur.archlinux.org/xorgxrdp-git.git
-	cd xorgxrdp-git || exit
+	git clone https://aur.archlinux.org/xorgxrdp.git
+	cd xorgxrdp || exit
 	makepkg -sri --noconfirm
 )
 ###############################################################################
