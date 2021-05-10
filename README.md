@@ -1,4 +1,4 @@
-# Running Manjaro Linux of Hyper-V.
+# Running Manjaro Linux on Hyper-V.
 
 Installation of Manjaro XFCE Linux on Hyper-V.
 
@@ -63,4 +63,3 @@ Set-VM -VMName "MachineName" -EnhancedSessionTransportType HvSocket
 ```
 
 Reboot the system.
-
