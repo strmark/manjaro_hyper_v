@@ -44,7 +44,11 @@ Edit the local .xinitrc and change it to:
 ```
 #!/bin/bash
 exec startxfce4
+or
+#!/bin/bash
+dbus-launch startxfce4
 ```
+
 Edit the grub configuration:
 ``` bash
 sudo vi /etc/default/grub
